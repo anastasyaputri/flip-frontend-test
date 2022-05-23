@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import TransactionListView from "./View/Transaction/TransactionListView";
+import TransactionDetailView from "./View/Transaction/TransactionDetailView";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <Switch>
+          <Route path="/detail" 
+          component={TransactionDetailView} 
+          />
+          <Route path="/" 
+          component={TransactionListView} 
+          />
+      </Switch>
+    )
 }
 
-export default App;
+export default App

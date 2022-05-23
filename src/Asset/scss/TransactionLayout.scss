@@ -1,0 +1,408 @@
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../Font/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(../Font/Lato-Bold.ttf);
+}
+
+$fontFamily-Lato-Regular: "Lato-Regular", sans-serif;
+$fontFamily-Lato-Bold: "Lato-Bold", sans-serif;
+
+body {
+    background-color: #f3f7f9;
+    display: flex;
+    justify-content: center;
+}
+
+.backArrow-icon {
+    width: 23px;
+    height: 23px;
+}
+
+.txnList-eachList {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.txnList-eachList:nth-child(odd) {
+    border-bottom: none;
+}
+
+.txnList-eachList:nth-child(even) {
+    border-bottom: none;
+}
+
+.txnList-eachList:last-child {
+    border-bottom: none;
+}
+
+.txnList-titleLayout {
+    margin-left: 14px;
+    padding: 10px 0px 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.txnList-content-header {
+    font-family: $fontFamily-Lato-Bold;
+    font-style: normal;
+    font-weight: bolder;
+    color: #111111;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding: 5px 0px 0px 0px;
+}
+
+.txnList-beneficiaryname-title {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: gray;
+    font-size: 12px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding: 2px 0px 0px 0px;
+}
+
+.txnList-value-header {
+    font-family: $fontFamily-Lato-Bold;
+    font-style: normal;
+    font-weight: 100;
+    color: #111111;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.txnList-beneficiaryname-content {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.txnList-each-amount {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+// detail
+.txnList-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 480px;
+    width: 100vw;
+    // height: 100vh;
+    padding: 0px 0px 20px 0px;
+    background-color: #f3f7f9;
+}
+
+.txnList-topSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.txnList-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 14px 14px 14px 14px;
+}
+
+.txnList-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 14px 14px 14px;
+}
+
+.backArrow-icon {
+    width: 23px;
+    height: 23px;
+}
+
+.txnList-title {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    color: #111111;
+}
+
+.txnList-topIntro {
+    font-family: $fontFamily-Lato-Bold;
+    font-style: normal;
+    font-weight: bolder;
+    color: #111111;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.txnList-topContent {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+
+.txnList-topContent-amount {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: bolder;
+    color: #fd6542;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.txnList-status-section {
+    width: 10px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.txnList-success-information {
+    background-color: #56b586;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.txnList-success-value {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.txnList-pending-information {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #fd6542;
+}
+
+.txnList-pending-value {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.txnList-status-button {
+    display: flex;
+    align-items: center;
+}
+
+.txnList-filter-section {
+    display: flex;
+    justify-content: center;
+    padding: 14px 14px 14px 14px;
+}
+
+.txnList-search-textbox {
+    background: url(../Icon/search.png) no-repeat scroll 10px 10px;
+    background-size: 23px;
+    padding: 10px 10px 10px 45px;
+    border: 1px solid #CFCCCC;
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+    height: 28px;
+    font-size: 15px;
+    font-family: $fontFamily-Lato-Regular;
+    background-color: #ffffff;
+}
+
+.txnList-dropdown-list {
+    height: 28px;
+    font-size: 15px;
+    font-family: $fontFamily-Lato-Regular;
+    color: #111111;
+    width: 50%;
+}
+
+.css-1s2u09g-control {
+    border-radius: 0px 8px 8px 0px !important;
+    min-height: 50px !important;
+}
+
+.css-1pahdxg-control {
+    border-radius: 0px 8px 8px 0px !important;
+    min-height: 50px !important;
+}
+
+.css-14el2xx-placeholder {
+    color: #111111 !important;
+}
+
+.css-tj5bde-Svg {
+    color: #fd6542 !important;
+}
+
+// Transaction Detail
+
+.txnDetail-titleLayout {
+    margin-left: 14px;
+}
+
+.txnDetail-title {
+    font-family: $fontFamily-Lato-Bold;
+    font-style: normal;
+    font-weight: bolder;
+    color: #111111;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.txnDetail-value {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+}
+
+.txnDetail-beneficiaryName {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+}
+
+.txnDetail-amount {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+}
+
+.txnDetail-remark {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+}
+
+.txnDetail-transactionDate {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #111111;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+}
+
+.txnDetail-title-uniqueCode {
+    font-family: $fontFamily-Lato-Bold;
+    font-style: normal;
+    font-weight: bolder;
+    color: #111111;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+}
+
+.txnDetail-eachList {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0px 15px 0px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.txnDetail-transactionId {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.txnDetail-eachList:nth-child(odd) {
+    border-bottom: none;
+}
+
+.txnDetail-eachList:nth-child(even) {
+    border-bottom: none;
+}
+
+.txnDetail-eachList:last-child {
+    border-bottom: none;
+}
+
+.txnDetail-content-section {
+    margin-bottom: 15px;
+}
+
+.txnDetail-button-back-sec {
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #fd6542;
+    cursor: pointer;
+}
+
+.txnDetail-button-back-content {
+    font-family: $fontFamily-Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    color: #fd6542;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.txnDetail-button-back {
+    display: flex;
+    align-items: center;
+}
+
+.txnDetail-inbox-img {
+    width: 50px;
+    padding: 0px 10px 10px 20px;
+}
