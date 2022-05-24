@@ -140,13 +140,6 @@ const TransactionListView = () => {
                         <input className="txnList-search-textbox" placeholder="Cari nama atau bank" 
                             onChange={(e) => searchTransaction(e)} value={searchValue} 
                         />
-                        {/* <select 
-                        // name={name} value={value} onChange={handleChange}
-                        >
-                            <option value="A">Apple</option>
-                            <option value="B">Banana</option>
-                            <option value="C">Cranberry</option>
-                        </select> */}
                         <Select
                             options={options}
                             placeholder={'URUTKAN'}
